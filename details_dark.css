@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,600;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,700&display=swap');
+
+
+:root{
+    --brand-primary: #0768AC;
+    --brand-secondary :#03C180;
+    --bg_default :#1A1A1A;
+    --bg_body: #282828;
+    --lines-color: #000000;
+    --body-text :#EDEDED;
+    --heart-color: #DC143C;
+    --body-black:#333333;
+
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Nunito Sans;
+}
+.container{
+    width: 100%;
+  
+}
+.navbar{
+    display: flex;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    background-color: var(--lines-color);
+}
+.left-logo , .right-logo{
+    width: 50%;
+  
+}
+
+.right-logo{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar button{
+    background-color: var(--lines-color);
+    border: 1px solid var(--bg_default) ;
+    padding: 8px;
+    margin-left: -28px;
+    margin-right: 34px;
+    color: var(--body-text);
+}
+
+.left-logo p {
+    color: var(--brand-primary);
+   text-transform: capitalize;
+   margin-left: 80px;
+}
+
+.right-logo span{
+    text-transform: capitalize;
+}
+.header{
+    position: relative;
+    height: 80px;
+}
+.header-content{
+    text-align: center;
+    width: 100%;
+    margin-top: -39px;
+    margin-left: 49px;
+    padding-bottom: 10px;
+    color: var(--body-text);
+}
+.header-content h1{
+    font-weight: 700;
+    color: var(--brand-secondary);
+    margin-right: 148px;
+    font-size: 25px;
+}
+.triangle1 {
+    width: 100%;
+    height: 60px;
+    background-color: var(--brand-primary);
+    clip-path: polygon(100% 0%,0% 0%,0% 100% );
+    position: absolute;
+    z-index: 111;
+}
+.triangle2 {
+    width: 100%;
+    height: 60px;
+    background-color: var(--brand-secondary);
+    clip-path: polygon(100% 0%,100% 100%,0% 0% );
+    position: absolute;
+    top: 0;
+}
+.clip-content{
+    background-color: var(--lines-color);
+}
+.web{
+    background-color: var(--bg_body);
+    position: relative;
+}
+h4{
+    color: var(--brand-secondary);
+}
+.web .html-page ion-icon {
+    color: 	#DAA520	
+}
+
+.html-page{
+    
+    color: #fff;
+    width: 35%;
+    margin-left: 15rem;
+    padding: 20px;
+}
+.web-html{
+    background-color:var(--body-black);
+ 
+  
+}
+.title-sub{
+    font-weight: 700;
+}
+
+.sub-topices{
+    background-color: var(--bg_default);
+}
+.sub-topics{
+    width: 35%;
+    margin-left: 15rem;
+   padding-top: 35px;
+}
+ul{
+    list-style-type: none;
+    color: var(--body-text);
+  
+}
+li{
+    border: 1px solid var(--lines-color);
+    padding: 15px;
+    background-color:var(--bg_body)
+}
+
+ul li ion-icon{
+    color: var(--brand-secondary);
+}
+.card{
+    width:20%;
+    position: absolute;
+    top: 79px;
+    left: 50rem;
+    background-color: #fff;
+}
+.card img{
+    width: 100%;
+}
+.intrested{
+    border: 1px solid var(--bg_body);
+    padding: 20px;
+    margin: 10px;
+}
+.intrested button{
+    background-color: var(--brand-secondary);
+    color: var(--bg_body);
+    padding: 5px;
+}
+.card span{
+    color: var(--lines-color);
+    margin-left: 10px;
+}
+.card p{
+    margin-left: 10px;
+}
+.developed{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--bg_default);
+    color: var(--body-text);
+}
+.developed ion-icon {
+    color: var(--heart-color);
+}
+
+.card{
+    background-color: var(--bg_body);
+    color: var(--body-text);
+}
+@media screen and (max-width:768px) {
+    .left-logo{
+        line-height: 49px;
+    }
+    .right-logo span{
+        display: none;
+    }
+    .header-content h1{
+        font-size: 16px;
+        margin-right: 46px;
+    }
+    .header-content{
+        margin-left: 0px;
+    }
+    .html-page{
+       
+        width: 86%;
+        margin-left:0;
+        padding: 20px;
+    }
+    .sub-topics{
+        width: 100%;
+        margin-left: 0;
+    }
+    .card{
+        width: 100%;
+        position: static;
+        margin-top: 23px;
+    }
+
+}

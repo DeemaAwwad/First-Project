@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,600;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,700&display=swap');
+
+
+:root{
+    --brand-primary: #0768AC;
+    --brand-secondary: #03C180;
+--bg_default :#FFFFFF;
+--bg_body :#F0F9FF;
+--lines-color :#DDDDDD;
+--body-text: #333333;
+--heart-color: #DC143C;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Nunito Sans;
+}
+.container{
+    width: 100%;
+    
+}
+.navbar{
+    display: flex;
+    padding-top: 19px;
+    padding-bottom: 20px;
+}
+.left-logo , .right-logo{
+    width: 50%;
+  
+}
+
+.right-logo{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar button{
+    background-color: #fff;
+    border: 1px solid grey ;
+    padding: 8px;
+    margin-left: -28px;
+    margin-right: 34px;
+}
+
+.left-logo p {
+    color: var(--brand-primary);
+   text-transform: capitalize;
+   margin-left: 80px;
+}
+
+.right-logo span{
+    text-transform: capitalize;
+}
+.header{
+    position: relative;
+    height: 80px;
+}
+.header-content{
+    text-align: center;
+    width: 100%;
+    margin-top: -39px;
+    margin-left: 49px;
+    padding-bottom: 10px;
+}
+.header-content h1{
+    font-weight: 700;
+    color: var(--brand-secondary);
+    margin-right: 148px;
+    font-size: 25px;
+}
+.triangle1 {
+    width: 100%;
+    height: 60px;
+    background-color: var(--brand-primary);
+    clip-path: polygon(100% 0%,0% 0%,0% 100% );
+    position: absolute;
+    z-index: 111;
+}
+.triangle2 {
+    width: 100%;
+    height: 60px;
+    background-color: var(--brand-secondary);
+    clip-path: polygon(100% 0%,100% 100%,0% 0% );
+    position: absolute;
+    top: 0;
+}
+.web{
+    background-color: var(--bg_body);
+    position: relative;
+}
+h4{
+    color: var(--brand-secondary);
+}
+.web .html-page ion-icon {
+    color: 	#DAA520	
+}
+
+.html-page{
+    
+    color: #fff;
+    width: 35%;
+    margin-left: 15rem;
+    padding: 20px;
+}
+.web-html{
+    background-color:var(--body-text);
+ 
+  
+}
+.title-sub{
+    font-weight: 700;
+}
+
+.sub-topics{
+    width: 35%;
+    margin-left: 15rem;
+    margin-top: 35px;
+}
+ul{
+    list-style-type: none;
+  
+}
+li{
+    border: 1px solid var(--lines-color);
+    padding: 15px;
+    background-color:var(--bg_default)
+}
+
+ul li ion-icon{
+    color: var(--brand-secondary);
+}
+.card{
+    width:20%;
+    position: absolute;
+    top: 79px;
+    left: 50rem;
+    background-color: #fff;
+}
+.card img{
+    width: 100%;
+}
+.intrested{
+    border: 1px solid var(--bg_body);
+    padding: 20px;
+    margin: 10px;
+}
+.intrested button{
+    background-color: var(--brand-secondary);
+    color: var(--bg_body);
+    padding: 5px;
+}
+.card span{
+    color: var(--lines-color);
+    margin-left: 10px;
+}
+.card p{
+    margin-left: 10px;
+}
+.developed{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.developed ion-icon {
+    color: var(--heart-color);
+}
+
+
+@media screen and (max-width:768px) {
+    .left-logo{
+        line-height: 49px;
+    }
+    .right-logo span{
+        display: none;
+    }
+    .header-content h1{
+        font-size: 16px;
+        margin-right: 46px;
+    }
+    .header-content{
+        margin-left: 0px;
+    }
+    .html-page{
+       
+        width: 86%;
+        margin-left:0;
+        padding: 20px;
+    }
+    .sub-topics{
+        width: 100%;
+        margin-left: 0;
+    }
+    .card{
+        width: 100%;
+        position: static;
+        margin-top: 23px;
+    }
+
+}
